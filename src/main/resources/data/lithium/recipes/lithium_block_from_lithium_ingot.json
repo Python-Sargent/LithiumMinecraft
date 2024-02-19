@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "lithium:lithium_ingot"
+    }
+  },
+  "result": {
+    "item": "lithium:lithium_block"
+  }
+}

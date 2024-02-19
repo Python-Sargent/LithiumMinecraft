@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "lithium:block/deepslate_lithium_ore"
+    }
+  }
+}

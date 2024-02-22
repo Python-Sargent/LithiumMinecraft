@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ggg",
+    "gLg",
+    "ggg"
+  ],
+  "key": {
+    "L": {
+      "item": "lithium:lithorium"
+    },
+    "g": {
+      "item": "minecraft:gold_nugget"
+    }
+  },
+  "result": {
+    "item": "lithium:gilded_lithorium"
+  }
+}

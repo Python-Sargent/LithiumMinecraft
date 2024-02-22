@@ -12,6 +12,8 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.altiusgames.lithium.Lithium;
+import org.altiusgames.lithium.block.custom.LithiumRadiatorBlock;
+import org.altiusgames.lithium.block.custom.LithoriumCropBlock;
 import org.altiusgames.lithium.item.ModItems;
 
 import java.util.function.Supplier;
@@ -29,6 +31,12 @@ public class ModBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_ORE), UniformInt.of(3, 6)));
     public static final RegistryObject<Block> DEEPSLATE_LITHIUM_ORE = registerBlock("deepslate_lithium_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE), UniformInt.of(3, 7)));
+
+    public static final RegistryObject<Block> LITHIUM_RADIATOR = registerBlock("lithium_radiator",
+            () -> new LithiumRadiatorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
+    public static final RegistryObject<Block>  LITHORIUM_PLANT = BLOCKS.register("lithorium_plant",
+            () -> new LithoriumCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

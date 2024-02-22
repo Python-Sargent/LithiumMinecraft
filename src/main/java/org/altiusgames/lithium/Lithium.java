@@ -48,15 +48,31 @@ public class Lithium
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.LITHIUM);
             event.accept(ModItems.LITHIUM_INGOT);
+            event.accept(ModItems.LITHORIUM_SEEDS);
+            event.accept(ModItems.IONIZED_LITHIUM);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(ModItems.LITHORIUM);
+            event.accept(ModItems.GILDED_LITHORIUM);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.COMBAT) {
+            event.accept(ModItems.LITHIUM_POWER_ORB);
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.LITHIUM_BLOCK);
         }
+
         if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.RAW_LITHIUM_BLOCK);
             event.accept(ModBlocks.LITHIUM_ORE);
             event.accept(ModBlocks.DEEPSLATE_LITHIUM_ORE);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+            event.accept(ModBlocks.LITHIUM_RADIATOR);
         }
     }
 

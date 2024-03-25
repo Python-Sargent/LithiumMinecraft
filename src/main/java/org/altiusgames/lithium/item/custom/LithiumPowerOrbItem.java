@@ -4,6 +4,7 @@ import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionResultHolder;
@@ -16,6 +17,7 @@ import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
+import org.altiusgames.lithium.sound.ModSounds;
 import org.altiusgames.lithium.util.ModTags;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -33,6 +35,8 @@ public class LithiumPowerOrbItem extends Item {
         if(!level.isClientSide()) {
 
             SpawnAction(player, level);
+            level.playSeededSound(null, player.position().x(), player.position().y(), player.position().z(),
+                    ModSounds.LITHIUM_POWER_ORB_USE.get(), SoundSource.PLAYERS, 1f, 1f, 0);
             player.getCooldowns().addCooldown(this, 20);
             player.getItemInHand(hand).hurtAndBreak(1, player,
                     player1 -> player.broadcastBreakEvent(player.getUsedItemHand()));

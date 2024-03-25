@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+      "item": "lithium:lithium_ingot"
+    },
+    "M": {
+      "item": "minecraft:magma_cream"
+    }
+  },
+  "pattern": [
+    "LLL",
+    "LML",
+    "LLL"
+  ],
+  "result": {
+    "item": "lithium:lithium_radiator"
+  },
+  "show_notification": true
+}

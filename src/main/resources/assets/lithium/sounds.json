@@ -1,0 +1,52 @@
+{
+  "lithium_power_orb_use" : {
+    "subtitles": "sounds.lithium.lithium_power_orb_use",
+    "sounds": [
+      "lithium:lithium_power_orb_use"
+    ]
+  },
+  "lithium_radiator_diffuse" : {
+    "subtitles": "sounds.lithium.lithium_radiator_diffuse",
+    "sounds": [
+      "lithium:lithium_radiator_diffuse"
+    ]
+  },
+  "lithium_radiator_break" : {
+    "subtitle": "sounds.lithium.lithium_radiator_break",
+    "sounds": [
+      "lithium:lithium_radiator_break"
+    ]
+  },
+  "lithium_radiator_step" : {
+    "subtitle": "sounds.lithium.lithium_radiator_step",
+    "sounds": [
+      "lithium:lithium_radiator_step"
+    ]
+  },
+  "lithium_radiator_place" : {
+    "subtitle": "sounds.lithium.lithium_radiator_place",
+    "sounds": [
+      "lithium:lithium_radiator_place"
+    ]
+  },
+  "lithium_radiator_hit" : {
+    "subtitle": "sounds.lithium.lithium_radiator_hit",
+    "sounds": [
+      "lithium:lithium_radiator_hit"
+    ]
+  },
+  "lithium_radiator_fall" : {
+    "subtitle": "sounds.lithium.lithium_radiator_fall",
+    "sounds": [
+      "lithium:lithium_radiator_fall"
+    ]
+  },
+  "disc_84": {
+    "sounds": [
+      {
+        "name": "lithium:disc_84",
+        "stream": true
+      }
+    ]
+  }
+}

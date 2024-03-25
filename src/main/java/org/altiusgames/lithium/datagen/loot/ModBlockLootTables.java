@@ -1,5 +1,6 @@
 package org.altiusgames.lithium.datagen.loot;
 
+import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.flag.FeatureFlagSet;
@@ -11,10 +12,13 @@ import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.providers.number.NumberProviders;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.registries.RegistryObject;
 import org.altiusgames.lithium.block.ModBlocks;
+import org.altiusgames.lithium.block.custom.LithoriumCropBlock;
 import org.altiusgames.lithium.item.ModItems;
 import org.jetbrains.annotations.NotNull;
 
@@ -35,6 +39,29 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createOreDrops(ModBlocks.DEEPSLATE_LITHIUM_ORE.get(), ModItems.LITHIUM.get()));
         this.add(ModBlocks.LITHIUM_ORE.get(),
                 block -> createOreDrops(ModBlocks.LITHIUM_ORE.get(), ModItems.LITHIUM.get()));
+
+        this.dropSelf(ModBlocks.LITHIUM_STAIRS.get());
+        this.dropSelf(ModBlocks.LITHIUM_BUTTON.get());
+        this.dropSelf(ModBlocks.LITHIUM_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.LITHIUM_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.LITHIUM_FENCE.get());
+        this.dropSelf(ModBlocks.LITHIUM_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.LITHIUM_WALL.get());
+
+        this.add(ModBlocks.LITHIUM_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.LITHIUM_SLAB.get()));
+        this.add(ModBlocks.LITHIUM_DOOR.get(),
+                block -> createDoorTable(ModBlocks.LITHIUM_DOOR.get()));
+
+        LootItemCondition.Builder lootitemcondition$builder = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlocks.LITHORIUM_PLANT.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(LithoriumCropBlock.AGE, 5));
+
+        this.add(ModBlocks.LITHORIUM_PLANT.get(), createCropDrops(ModBlocks.LITHORIUM_PLANT.get(), ModItems.LITHORIUM.get(),
+                ModItems.LITHORIUM_SEEDS.get(), lootitemcondition$builder));
+
+        this.dropSelf(ModBlocks.LITHMUS.get());
+        this.add(ModBlocks.POTTED_LITHMUS.get(), createPotFlowerItemTable(ModBlocks.LITHMUS.get()));
     }
 
     private LootTable.Builder createOreDrops(Block block, Item item) {

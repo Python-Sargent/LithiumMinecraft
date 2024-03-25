@@ -1,0 +1,8 @@
+// 1.20.1	2024-02-23T10:49:46.094553127	Tags for minecraft:block mod id lithium
+9e79132cc34bae4dd3df597592659c0e046945b9 data/lithium/tags/blocks/lithium_reactive.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/lithium/tags/blocks/needs_lithium_tool.json
+c9883fb7bd4ab08595b09cec5f92cfe1b5dcca02 data/minecraft/tags/blocks/fence_gates.json
+0223154c0ec9d56c37ee385ab0cd366fc1415002 data/minecraft/tags/blocks/fences.json
+de0a9a44bb07927a2619cd8fc8ab659ea59d1780 data/minecraft/tags/blocks/mineable/pickaxe.json
+de0a9a44bb07927a2619cd8fc8ab659ea59d1780 data/minecraft/tags/blocks/needs_iron_tool.json
+8e4ba6e7bc7ba05eb71f24e778475407824547cc data/minecraft/tags/blocks/walls.json

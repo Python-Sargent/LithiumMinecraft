@@ -2,13 +2,45 @@
   "item.lithium.lithium": "Raw Lithium",
   "item.lithium.lithium_ingot": "Lithium Ingot",
   "item.lithium.ionized_lithium": "Ionized Lithium",
+
+  "item.lithium.lithium_sword": "Lithium Sword",
+  "item.lithium.lithium_pickaxe": "Lithium Pickaxe",
+  "item.lithium.lithium_axe": "Lithium Axe",
+  "item.lithium.lithium_shovel": "Lithium Shovel",
+  "item.lithium.lithium_hoe": "Lithium Hoe",
+
+  "item.lithium.lithium_helmet": "Lithium Helmet",
+  "item.lithium.lithium_chestplate": "Lithium Chestplate",
+  "item.lithium.lithium_leggings": "Lithium Leggings",
+  "item.lithium.lithium_boots": "Lithium Boots",
+
   "item.lithium.lithium_power_orb": "Lithium Power Orb",
   "item.lithium.lithorium": "Lithorium",
   "item.lithium.gilded_lithorium": "Gilded Lithorium",
   "item.lithium.lithorium_seeds": "Lithorium Seeds",
+  "block.lithium.lithmus": "Lithmus Flower",
+
+  "item.lithium.disc_84": "Disc 84",
+  "item.lithium.disc_84.desc": "Altius Games - Ionized",
+
   "block.lithium.lithium_block": "Block of Lithium",
   "block.lithium.raw_lithium_block": "Block of Raw Lithium",
   "block.lithium.lithium_ore": "Lithium Ore",
   "block.lithium.deepslate_lithium_ore": "Deepslate Lithium Ore",
-  "block.lithium.lithium_radiator": "Lithium Radiator"
+  "block.lithium.lithium_radiator": "Lithium Radiator",
+
+  "block.lithium.lithium_stairs": "Lithium Stairs",
+  "block.lithium.lithium_slab": "Lithium Slab",
+  "block.lithium.lithium_button": "Lithium Button",
+  "block.lithium.lithium_pressure_plate": "Lithium Pressure Plate",
+  "block.lithium.lithium_fence": "Lithium Fence",
+  "block.lithium.lithium_fence_gate": "Lithium Fence Gate",
+  "block.lithium.lithium_wall": "Lithium Wall",
+  "block.lithium.lithium_door": "Lithium Door",
+  "block.lithium.lithium_trapdoor": "Lithium Trapdoor",
+
+  "entity.minecraft.villager.lithium.lithium_technician": "Lithium Technician",
+
+  "sounds.lithium.lithium_power_orb_use": "Lithium Power Orb Fires",
+  "sounds.lithium.lithium_radiator_diffuse": "Lithium Radiator Radiates"
 }

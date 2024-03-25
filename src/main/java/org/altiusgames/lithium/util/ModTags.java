@@ -11,6 +11,7 @@ import org.altiusgames.lithium.Lithium;
 public class ModTags {
     public static class Blocks {
         public static final TagKey<Block> LITHIUM_REACTIVE = tag("lithium_reactive");
+        public static final TagKey<Block> NEEDS_LITHIUM_TOOL = tag("needs_lithium_tool");
 
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(Lithium.MOD_ID, name));

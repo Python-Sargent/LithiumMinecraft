@@ -1,0 +1,13 @@
+{
+  "entries": [
+    "lithium:lithium_power_orb_from_desert_well_sus_sand",
+    "lithium:disc_84_from_nether_fortress_chest",
+    "lithium:lithium_from_nether_fortress_chest",
+    "lithium:lithium_from_piglin_bartering",
+    "lithium:lithium_power_orb_from_desert_pyramid_sus_sand",
+    "lithium:disc_84_from_ruined_portal_chest",
+    "lithium:lithium_power_orb_from_trail_ruins_rare_sus_sand",
+    "lithium:lithium_from_ruined_portal_chest"
+  ],
+  "replace": false
+}

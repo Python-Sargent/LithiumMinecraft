@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "L": {
+      "item": "lithium:lithium_ingot"
+    }
+  },
+  "pattern": [
+    "LLL",
+    "L L",
+    "   "
+  ],
+  "result": {
+    "item": "lithium:lithium_helmet"
+  },
+  "show_notification": true
+}

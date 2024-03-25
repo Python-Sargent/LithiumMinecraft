@@ -1,0 +1,9 @@
+{
+  "values": [
+    "lithium:lithium_block",
+    "lithium:lithium_radiator",
+    "lithium:lithium_ore",
+    "lithium:deepslate_lithium_ore",
+    "lithium:raw_lithium_block"
+  ]
+}

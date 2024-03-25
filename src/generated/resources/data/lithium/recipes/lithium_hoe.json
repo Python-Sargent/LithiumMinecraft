@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "L": {
+      "item": "lithium:lithium_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " LL",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "item": "lithium:lithium_hoe"
+  },
+  "show_notification": true
+}

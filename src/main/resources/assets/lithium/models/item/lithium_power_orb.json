@@ -1,6 +1,18 @@
 {
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "lithium:item/lithium_power_orb"
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "lithium:item/lithium_power_orb_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "lithium:item/lithium_power_orb_2d"
+    },
+    "ground": {
+      "parent": "lithium:item/lithium_power_orb_2d"
+    },
+    "fixed": {
+      "parent": "lithium:item/lithium_power_orb_2d"
+    }
   }
 }

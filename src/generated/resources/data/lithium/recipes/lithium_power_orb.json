@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": {
+      "item": "minecraft:blaze_rod"
+    },
+    "L": {
+      "item": "lithium:lithium_ingot"
+    }
+  },
+  "pattern": [
+    " L ",
+    "LBL",
+    " L "
+  ],
+  "result": {
+    "item": "lithium:lithium_power_orb"
+  },
+  "show_notification": true
+}
